@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>FitWeb</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="icon" href="favicon-16x16.png" type="image/x-icon">
+  <style>
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .jumbotron {
+      background-image: url("fitness_bg2.jpg");
+      background-size: cover;
+      color: #fff;
+    }
+    
+    .jumbotron h1 {
+      font-size: 48px;
+      margin-top: 150px;
+    }
+    
+    .jumbotron p {
+      font-size: 24px;
+    }
+    
+    .jumbotron .btn {
+      font-size: 18px;
+      padding: 12px 24px;
+      margin-top: 20px;
+    }
+    
+    .about-section img {
+      width: 100%;
+      height: auto;
+    }
+    
+    .services-section .card {
+      margin-bottom: 20px;
+    }
+    
+    .contact-section form {
+      margin-top: 40px;
+    }
+    
+    .footer {
+      background-color: #343a40;
+      color: #fff;
+      padding: 20px 0;
+    }
+
+    .logo {
+        height: 80px;
+    }
+
+    .container_about-section {
+        padding: 10%;
+    }
+
+    .serv1:hover {
+        opacity: 0.3;
+    }
+
+    .serv2:hover {
+        opacity: 0.3;
+    }
+
+    .serv3:hover {
+        opacity: 0.3;
+    }
+  </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#"><img src="logo1.png" class="logo"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#home_href">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#aboutus_href">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#ourservices_href">Services</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#contact_href">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<section id="home_href" class="jumbotron text-center">
+  <h1 class="display-4">Welcome to FitWeb</h1>
+  <p class="lead">Achieve your fitness goals with us</p>
+  <a href="#ourservices_href" class="btn btn-primary">Get Started</a>
+</section>
+
+<section id="aboutus_href" class="container_about-section">
+<div class="abus">
+  <div class="row">
+    <div class="col-md-6">
+      <h2>About Us</h2>
+      <p>We pride ourselves on creating a welcoming and inclusive environment for individuals of all fitness levels. 
+        Whether you're a beginner taking your first steps towards fitness or an experienced athlete looking for a new challenge, 
+        FitWeb is here to support you every step of the way.</p>
+    </div>
+    <div class="col-md-6">
+      <img src="fitness_bg3.jpg" alt="About Us" class="img-fluid">
+    </div>
+    </div>
+</div>
+</section>
+
+<section id="ourservices_href" class="bg-light services-section">
+  <div class="container">
+    <h2 class="text-center">Our Services</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <a class="serv1" href="service1.html"><img src="service1.jpg" alt="Service 1" class="card-img-top"></a>
+          <div class="card-body">
+            <h5 class="card-title">Invidual treaning for pro athlete</h5>
+            <p class="card-text">this is just for athletes in profesiolnal sphere, this service
+                include training on every day bases. We have trainer for every sport, so dont worry we got you!
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <a class="serv2" href="service2.html"><img src="service2.jpg" alt="Service 2" class="card-img-top"></a>
+          <div class="card-body">
+            <h5 class="card-title">Invidual treaning for beginners</h5>
+            <p class="card-text">this kind of treaning is based of your need
+                and the schedule is structured in your preferenc, 
+                just contact us end we will help you for sure!</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <a class="serv3" href="service3.html"><img src="service3.jpg" alt="Service 3" class="card-img-top"></a>
+          <div class="card-body">
+            <h5 class="card-title">Nutrision</h5>
+            <p class="card-text">to acomplise your goals nutrision is definitly essential part,
+                if you what to acomplise your dreams quicek or eat helpier doesnt matter,
+                we dont care if your beginne or pro, our nutrision team is here for you!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact_href" class="container contact-section">
+  <h2 class="text-center">Contact Us</h2>
+  <div class="row">
+    <div class="col-md-6 offset-md-3">
+      <form>
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" class="form-control" id="name" placeholder="Enter your name">
+        </div>
+        <div class="form-group">
+          <label for="email">Your Email</label>
+          <input type="email" class="form-control" id="email" placeholder="Enter your email">
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea class="form-control" id="message" rows="5" placeholder="Enter your message"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer class="bg-dark text-light text-center py-4 footer">
+  <p>&copy; 2023 Fitness Website. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
